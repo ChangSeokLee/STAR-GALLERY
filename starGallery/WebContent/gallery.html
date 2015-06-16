@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>STAR GALLERY</title>
+<meta charset="EUC-KR">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="./img/favicon.ico">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+<script src="./js/jquery-2.1.4.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+
+<style type="text/css">
+<!-- 글꼴 -->
+@font-face {
+	font-family: NanumBarunGothic-ttf;
+	src: url("./font/NanumBarunGothic.ttf");
+}
+
+@font-face {
+	font-family: NanumBarunGothicBold-ttf;
+	src: url("./font/NanumBarunGothicBold.ttf");
+}
+
+p {
+	font-family: NanumBarunGothicBold-ttf;
+}
+
+.text_center {
+	text-align: center;
+}
+
+fieldset.login {
+	float: right;
+	width: 150px;
+	height: 130px;
+	width: 150px;
+}
+
+.row>div {
+	border: 1px solid #000;
+}
+</style>
+</head>
+<body>
+	<p>글꼴 바뀌는지 보자.</p>
+	<nav>
+		<div class="container">
+			<div class="navbar navbar-inverse">
+				<a class="navbar-brand" href="#">Brand</a>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">전체 카테고리</a></li>
+					<li><a href="#">브랜드</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-ok-sign"></span>로그인</a></li>
+					<li><a href="#"><span
+							class="glyphicon glyphicon-user icon-white"></span>회원가입</a></li>
+					<li><a href="#"><span
+							class="glyphicon glyphicon-ok-circle icon-white"></span>나의계정</a></li>
+					<li><a href="#"><span
+							class="glyphicon glyphicon-search icon-white"></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<a href="http://www.msteam.co.kr/moonchaewon/">공식 홈페이지</a>
+	</nav>
+	<section>
+		<form action="form_action.do" method="get">
+			<fieldset class="login">
+				<legend>LOGIN</legend>
+				<label>ID</label><br /> <input type="text" id="name"
+					required="required" placeholder="아이디를 입력하세요."><br /> <label>Password</label><br />
+				<input type="password" id="password" required="required"
+					placeholder="비밀번호를 입력하세요."><br /> <input type="submit"
+					value="OK" class="login_ok"> <input type="reset"
+					value="CANCEL" class="login_cancel">
+			</fieldset>
+		</form>
+		<iframe width="459" height="344"
+			src="https://www.youtube.com/embed/IRR-paG5YG0?feature=oembed&autoplay=0"
+			frameborder="0" allowfullscreen></iframe>
+	</section>
+	<aside></aside>
+	<!--  댓글 -->
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/* * * CONFIGURATION VARIABLES * * */
+		var disqus_shortname = 'httpkyunghwabearcomlcs';
+
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+			var dsq = document.createElement('script');
+			dsq.type = 'text/javascript';
+			dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document
+					.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>
+		Please enable JavaScript to view the <a
+			href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+			powered by Disqus.</a>
+	</noscript>
+</body>
+<footer class="text_center">
+	<hr />
+	&copy; copyright all rights reserved
+</footer>
+</html>
